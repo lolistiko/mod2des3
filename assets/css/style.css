@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(185, 186, 190);
+  box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+padding: 10px;
+}
+
+.logo {
+  width: 120px;
+}
+
+
+.form-select {
+  width: 190px;
+  padding: 5px 10px;
+  margin: 5px 0;
+
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  border: 5px rgba(241, 232, 232, 0.822);
+  border-radius: 100px;
+  background-color: rgb(185, 186, 190);
+  box-shadow: rgb(90, 6, 247);
+}
+
+.form-select option {
+  padding: 8px 12px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  height: 100vh;
+}
+
+
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #1d3557;
+  padding: 5px;
+}
+
+.main {
+  grid-area: main;
+  justify-items: center;
+  background-color: #1d3557;
+  padding: 20px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: content-box;
+  }
+
+.buttons {
+  grid-area: buttons;
+  background-color: #1d3557;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #1d3557;
+  padding: 20px;
+  text-align: center;
+}
+
+.main .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color:#1d3557;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 5);
+  height: 100%;
+}  
+
+.card-button {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-boton {
+  display: flex;
+  text-align: center;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background-color: #1d3557;
+  color: #1d3557;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  align-items: center;
+  padding: 20px;
+  flex-grow: 1; 
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1d3557
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #0c1125ab;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.card-price {
+  text-align: end;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+.card-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1d3557;
+  color: rgba(36, 36, 36, 0.062);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.card-button:hover {
+  background-color: #1d3557;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .grid-container {
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "sidebar buttons"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  }

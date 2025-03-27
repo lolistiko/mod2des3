@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Media Queries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+      <a class="navbar-brand" href="#"><img src="/assets/img/logo.jpg" alt="logo" class="logo" /></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto ps-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+               
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+        <aside class="sidebar">
+        
+        <div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Ordenar por</option>
+            <option value="asc">Menor a Mayor</option>
+            <option value="desc">Mayor a Menor</option>
+            <option value="new">Más Vendidos</option>
+            <option value="popular">Mejor evaluados</option>
+          </select>
+        
+        </div>
+        
+        </aside>
+        <main class="main">
+            <div class="card">
+                <img id="wrangler" src="./assets/img/wrangler.jpg" alt="wrangler" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Wrangler Rubicon</h2>
+                    <p class="card-description">
+                    El legendario y nuevo Jeep® Wrangler 2025 presenta capacidades nunca antes vistas además de elementos exteriores rediseñados y actualizaciones interiores. Experimenta una versión renovada del ícono original de la aventura.
+                    </p>
+                    <p class="card-price">$56.990.000</p>
+            </div>
+                </div>
+
+            <div class="card">
+                <img id="Renegade" src="./assets/img/2023-jeep-renegade.jpg" alt="Renegade" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">New Renegade</h2>
+                    <p class="card-description">
+                    Recorre los caminos con confianza, tanto de día como de noche con el grupo Limited Elite disponible. Cuenta con focos delanteros LED, luces traseras LED, luces para el día LED y más.
+                    </p>
+                    <p class="card-price">$19.990.000</p>
+                </div>            
+            </div>
+
+            <div class="card">
+                <img id="compass" src="./assets/img/compass.jpg" alt="compass" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Compass Sport</h2>
+                    <p class="card-description">
+                    El Jeep® Compass potencia casi cada aspecto de tu conducción. Descubre la apariencia, sensación y rendimiento de un verdadero SUV moderno.
+                    </p>
+                    <p class="card-price">$22.990.000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="patriot" src="./assets/img/jeep_patriot.jpg" alt="patriot" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Patriot</h2>
+                    <p class="card-description">
+                    El Jeep Patriot ha sido una opción popular entre los conductores que buscan una mezcla de capacidad todoterreno y comodidad diaria.
+                    </p>
+                    <p class="card-price">$9.990.000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="commander" src="./assets/img/jeep-commander.jpg" alt="commander" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Commander</h2>
+                    <p class="card-description">
+                    Naturalmente sofisticado, el nuevo Jeep® Commander te invita a descubrir nuevas aventuras viviendo un nuevo nivel en SUVs.
+                    </p>
+                    <p class="card-price">$35.990.000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="gladiator" src="./assets/img/gladiator.jpg" alt="gladiator" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Gladiator</h2>
+                    <p class="card-description">
+                    Para acentuar su exterior agresivo, todos los modelos de la Gladiator están equipados con un juego de gomas que realzan su ya potente apariencia.
+                    </p>
+                    <p class="card-price">$60.000.000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="Magneto" src="./assets/img/jeep-wrangler-magneto.jpg" alt="Magneto" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Magneto</h2>
+                    <p class="card-description">
+                    Que el hermoso aspecto del Magneto no te confunda. Este pequeño monstruo guarda un enorme poder y es capaz de alcanzar los 100 km/h en 2 segundos.
+                    </p>
+                    <p class="card-price">$65.990.000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="cherokee" src="./assets/img/grand cherokee.jpg" alt="cherokee" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Grand Cherokee</h2>
+                    <p class="card-description">
+                    La familia Grand Cherokee está lista para tu próxima gran aventura. Prepárate para las increíbles combinaciones disponibles.
+                    <p class="card-price">$52.990.000</p>
+                </div>
+            </div>
+                       
+        </main>
+        
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <footer class="footer">
+            <div>
+                <p>© 2025 Rodrigo Irarrazabal</p>
+            </div>          
+    </div>    
+</body>
+</html>
