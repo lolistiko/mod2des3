@@ -165,15 +165,17 @@ header {
   height: auto;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  }
 
 @media (min-width: 576px) {
   .grid-container { 
     display: grid;
     grid-template-columns: auto auto auto;}
-
 .pagination {
 display: flex;
 justify-content: center;
-
 }
-
+}
