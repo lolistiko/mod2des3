@@ -4,7 +4,6 @@
   background-color: rgb(185, 186, 190);
   box-sizing: content-box;
   font-family: "Roboto", sans-serif;
-  
 }
 
 html {
@@ -28,46 +27,25 @@ header {
   justify-content: space-between;
   align-items: center;
   background-size: cover;
-  
+
   background-repeat: no-repeat;
   background-attachment: fixed;
-padding: 10px;
+  padding: 10px;
 }
 
 .logo {
-  width: 120px;
+  width: 160px;
 }
-
 
 .form-select {
-  width: 190px;
+  width: 100px;
   padding: 5px 10px;
   margin: 5px 0;
-
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Roboto", sans-serif;
-
-  border: 5px rgba(241, 232, 232, 0.822);
-  border-radius: 100px;
-  background-color: rgb(185, 186, 190);
-  box-shadow: rgb(90, 6, 247);
+  background-color: rgba(168, 168, 172, 0.679);
+  
 }
-
-.form-select option {
-  padding: 8px 12px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
-  grid-template-columns: 100px 1fr;
-  gap: 10px;
-  height: 100vh;
-}
-
 
 
 .sidebar {
@@ -76,7 +54,7 @@ padding: 10px;
   padding: 5px;
 }
 
-.main {
+.grid-container {
   grid-area: main;
   justify-items: center;
   background-color: #1d3557;
@@ -85,7 +63,8 @@ padding: 10px;
   display: grid;
   grid-template-columns: 1fr;
   box-sizing: content-box;
-  }
+
+}
 
 .buttons {
   grid-area: buttons;
@@ -107,12 +86,12 @@ padding: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color:#1d3557;
+  background-color: #1d3557;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 5);
+  box-shadow: 0 4px 15px rgba(27, 163, 105, 0.21);
   height: 100%;
-}  
+}
 
 .card-button {
   display: flex;
@@ -141,13 +120,13 @@ padding: 10px;
 .card-content {
   align-items: center;
   padding: 20px;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #1d3557
+  color: #1d3557;
 }
 
 .card-description {
@@ -181,23 +160,20 @@ padding: 10px;
   background-color: #1d3557;
 }
 
-
 .card img {
   width: 100%;
   height: auto;
 }
 
-@media screen and (min-width: 576px) {
-  .grid-container {
-    grid-template-areas:
-      "header header"
-      "sidebar main"
-      "sidebar buttons"
-      "footer footer";
-    grid-template-columns: 200px 1fr;
-    height: 100vh;
-  }
-  .main {
-    grid-template-columns: 1fr 1fr;
-  }
-  }
+
+@media (min-width: 576px) {
+  .grid-container { 
+    display: grid;
+    grid-template-columns: auto auto auto;}
+
+.pagination {
+display: flex;
+justify-content: center;
+
+}
+
